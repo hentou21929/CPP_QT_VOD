@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>vedioplayer</class>
+ <widget class="QWidget" name="vedioplayer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(49, 50, 52);</string>
+  </property>
+  <widget class="QDockWidget" name="playlistdock">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>0</y>
+     <width>231</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <widget class="playlistwind" name="playlistcontents_2">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(98, 98, 98);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="ctrlbar" name="ctrlbarwind" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>640</y>
+     <width>1000</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(205, 255, 208);</string>
+   </property>
+  </widget>
+  <widget class="displaywind" name="showwind" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>1080</width>
+     <height>580</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ctrlbar</class>
+   <extends>QWidget</extends>
+   <header location="global">ctrlbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>playlistwind</class>
+   <extends>QWidget</extends>
+   <header location="global">playlistwind.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>displaywind</class>
+   <extends>QWidget</extends>
+   <header location="global">displaywind.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

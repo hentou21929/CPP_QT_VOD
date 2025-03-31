@@ -1,0 +1,53 @@
+QWidget {
+    border:none;
+}
+
+MyLineEdit {
+}
+
+QWidget[type="search_widget"] {
+    background-color:#232527;
+    border-radius:8px;
+}
+
+QPushButton[type="nav_min_btn"] {
+    background-color:transparent;
+    border-image:url(:/res/images/nav_min_btn.png);
+    background-repeat:no-repeat;
+    padding-top:7px;
+}
+
+QPushButton[type="nav_min_btn"]:hover {
+    border-image:url(:/res/images/nav_min_btn_hover.png);
+}
+
+
+QPushButton[type="nav_max_btn"] {
+    background-color:transparent;
+    border-image:url(:/res/images/nav_max_btn.png);
+    background-repeat:no-repeat;
+    padding-top:7px;
+}
+QPushButton[type="nav_max_btn"]:hover {
+    border-image:url(:/res/images/nav_max_hover_btn.png);
+}
+
+QPushButton[type="nav_max_btn"]:checked {
+    border-image:url(:/res/images/nav_restore_btn.png);
+}
+
+QPushButton[type="nav_max_btn"]:checked:hover {
+    border-image:url(:/res/images/nav_restore_hover_btn.png);
+}
+
+QPushButton[type="nav_close_btn"] {
+    background-color:transparent;
+    border-image:url(:/res/images/nav_close_btn.png);
+    background-repeat:no-repeat;
+    padding-top:7px;
+}
+QPushButton[type="nav_close_btn"]:hover {
+    border-image:url(:/res/images/nav_close_btn_hover.png);
+}
+
+
