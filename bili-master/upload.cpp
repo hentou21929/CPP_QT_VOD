@@ -150,10 +150,10 @@ int upload::uploadToOSS(const QString &title)
     conf.requestTimeoutMs = 10000;
     conf.connectTimeoutMs = 5000;
 
-    const std::string endpoint = "oss-cn-shenzhen.aliyuncs.com";
-    const std::string accessKeyId = "LTAI5tRYmEuQBZx3tuT2xpFC";
-    const std::string accessKeySecret = "a443f87Xa7vtNOYRVZn0KHRFldqNrs";
-    const std::string bucketName = "videomaster";
+    const std::string endpoint = "";
+    const std::string accessKeyId = "";
+    const std::string accessKeySecret = "";
+    const std::string bucketName = "";
 
     OssClient client(endpoint, accessKeyId, accessKeySecret, conf);
 
